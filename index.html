@@ -1,0 +1,96 @@
+
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>DitchTheHole- The Pothole reporter</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="./def.css">
+  <style>
+  h2.hed {
+  margin: 35px;
+  margin-top: 2px;
+  font-family: "Times New Roman", Times, serif; 
+}
+</style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">DitchTheHole</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item ">
+        <a class="nav-link" href="#">View Reports</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="stellarhackers.html">About Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://drive.google.com/open?id=1k2vJUnDjVptsP8rsyr_d-wKkQt8YgDlq">Download Our App</a>
+      </li>
+      
+    </ul>
+  </div>
+</nav>
+
+  <div class="container">
+    <div class="row">
+    <div class="col">
+      <img src="goa.jfif" alt="Trulli" width="200" height="200" style="padding: 15px ">
+    </div>
+    <div class="col-5">
+      <h2 class="hed" style="text-align:center; padding: 30px"  >Pothole Report </h2>
+    </div>
+    <div class="col">
+    
+    </div>
+  </div>
+</div>
+  
+  
+  <main>
+    <form style="background-color:  #99ffd6; font-size: 20px">
+        <label for="userId" style="font-size: 15px"><font color="black" >User ID</label><br>
+        <input type="text" name="userId" id="userId"><br>
+        <label for="name" style="font-size: 15px"><font color="black" >Name</label><br>
+        <input type="text" name="name" id="name"><br>
+        <label for="location" style="font-size: 15px"><font color="black" >Location</label><br>
+        <input type="text" name="location" id="location"><br>  
+        <label for="pqi" style="font-size: 15px"><font color="black" >PQI-Pot-Hole Quality Index</label><br>
+        <input type="number" name="pqi" id="pqi"><br>
+        <button id="addBtn" class="btn waves-effect waves-light"  onclick="window.location.href = 'thankyou.html';" >Add</button>
+        <button id="removeBtn" class="btn waves-effect red darken-1">Remove</button>
+    </form>
+  </main>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.8.1/firebase.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBY15t7n3Sev7UZzec0AXdQxCxFv8TyS1E",
+    authDomain: "ditchthehole.firebaseapp.com",
+    databaseURL: "https://ditchthehole.firebaseio.com",
+    projectId: "ditchthehole",
+    storageBucket: "ditchthehole.appspot.com",
+    messagingSenderId: "1036515943111",
+    appId: "1:1036515943111:web:45e916e18f9681bf48d4e2",
+    measurementId: "G-9WJ3HPW79H"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+  <script src="./ghi.js"></script>
+</body>
+</html>   
